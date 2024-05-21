@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="section-form">
+    <div class="form-item">
+      <form action="/addUser" method="post">
+
+        <div class="input-group">
+          <input type="text" name="username" placeholder="username">
+        </div>
+
+        <div class="input-group">
+          <input type="text" name="email" placeholder="email">
+        </div>
+
+        <div class="input-group">
+          <input type="text" name="password" placeholder=" password">
+        </div>
+
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <td>Username</td>
+          <td>Email</td>
+          <td>password</td>
+          <td>Id</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% userList.map((v,i)=>{ %>
+          <tr>
+            <td>
+              <%=v.username%>
+            </td>
+            <td>
+              <%=v.email%>
+            </td>
+            <td>
+              <%=v.password%>
+            </td>
+            <td>
+              <%=v.id%>
+            </td>
+            <td>
+              <a href="/updateUser/?id=<%=v.id%>">update</a>
+              <a href="/deleteUser/<%=v.id%>">delete</a>
+            </td>
+          </tr>
+          <% }) %>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+
+</html>

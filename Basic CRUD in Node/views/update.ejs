@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="section-form">
+
+    <div class="form-item">
+
+      <div class="form-title">
+        <h3>Update page</h3>
+      </div>
+
+      <form action="/updateRecord/?id=<%=updateUser.id%>" method="post">
+
+        <div class="input-group">
+          <input type="text" value="<%=updateUser.username%>" name="username" placeholder="username">
+        </div>
+
+        <div class="input-group">
+          <input type="text" value="<%=updateUser.email%>" name="email" placeholder="email">
+        </div>
+
+        <div class="input-group">
+          <input type="text" value="<%=updateUser.password%>" name="password" placeholder=" password">
+        </div>
+
+        <button type="submit">update</button>
+      </form>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w-4 {
+  width: 25%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py {
+  padding: 8rem 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+}
+
+/* section-book */
+.section-book{
+  background-color: skyblue;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form-item{
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.input-group{
+  margin: 10px 0;
+}
+
+.input-group input{
+  width: 100%;
+  margin: 4px 0;
+  padding: 4px;
+  outline: none;
+}
+
+select{
+  outline: none;
+  border: none;
+}
+
+.submit-btn {
+  background-color: rgb(63, 165, 255);
+  border: none;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+

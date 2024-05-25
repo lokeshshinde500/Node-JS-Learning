@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w-4 {
+  width: 25%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py {
+  padding: 8rem 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+}
+
+/* section-book */
+.section-book {
+  background-color: #3388ff;
+}
+
+.section-book-title {
+  margin-bottom: 50px;
+}
+
+.section-book-title h2 {
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+.first-letter {
+  font-size: 5rem;
+}
+
+.book-item {
+  margin: 12px;
+  border-radius: 12px;
+}
+
+.book-image {
+  padding: 20px;
+  background-color: #1f5299;
+  border-bottom-left-radius: 30px;
+}
+
+.color-bg-1 {
+  background-color: #70acff;
+}
+
+.book-image img {
+  display: inline;
+  width: 150px;
+  height: 200px;
+}
+
+.book-content {
+  padding: 20px;
+  background-color: #70acff;
+  border-top-right-radius: 30px;
+}
+
+.color-bg-2 {
+  background-color: #1f5299;
+}
+
+.book-content span {
+  display: inline-block;
+  font-size: 1rem;
+  color: #c8ddf8;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #296dcc;
+  border-radius: 50px;
+  border: 1px solid #bcd6fa;
+}
+
+.book-content h4 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 4px 0;
+  color: #143666;
+}
+
+.book-content p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #143666;
+}
+
+.delete-btn,
+.update-btn {
+  padding: 3px 6px;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.update-btn {
+  background-color: green;
+}

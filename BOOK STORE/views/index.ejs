@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+
+  <section class="section-book">
+
+    <div class="container">
+      <div class="form-item ">
+        <div class="section-book-title text-center ">
+          <h2>Add Books</h2>
+        </div>
+        <form action="/book/add" method="post">
+
+          <div class="input-group">
+            <label for="">Enter book name</label><br>
+            <input name="bookName" class="" type="text" placeholder="Book name">
+          </div>
+
+          <div class="input-group">
+            <label for="">Enter book author</label><br>
+            <input name="author" class="" type="text" placeholder="Book author">
+          </div>
+
+          <% const genre=["self-help","horror","educational"]; %>
+            <div class="input-group">
+              <label for="">select genre</label>
+              <select name="genre" id="">
+                <option value="">--select-genre--</option>
+                <%genre.forEach((v,i)=>{ %>
+                  <option value="<%=v%>">
+                    <%=v%>
+                  </option>
+                  <%})%>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="">Upload cover page</label>
+              <input type="file" name="cover">
+
+            </div>
+
+            <div class="input-group">
+              <label for="">Enter Book Price</label><br>
+              <input class="" type="text" name="price" placeholder="Book Price">
+            </div>
+
+            <div class="input-group text-center">
+              <button class="submit-btn" type="submit">submit</button>
+            </div>
+
+
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

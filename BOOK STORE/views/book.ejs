@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book card design</title>
+  <link href="/css/book.css" type="text/css" rel="stylesheet" />
+  <link href="/css/max.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <section class="section-book py">
+
+    <div class="section-book-title text-center">
+      <h2><span class="first-letter">B</span>OOKS LIBRARY</h2>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <% bookList.forEach((v,i)=>{ %>
+
+          <div class="w-4 w-md-2 w-sm-2 w-xs-1">
+            <div class="book-item">
+              <div class="color-bg-1">
+                <div class="book-image text-center">
+                  <img src="/images/<%=v.cover%>" alt="bookName">
+                </div>
+              </div>
+              <div class="color-bg-2">
+                <div class="book-content">
+                  <span>
+                    <%=v.genre%>
+                  </span>
+                  <h4>
+                    <%=v.bookName%>
+                  </h4>
+                  <p>
+                    <%=v.author%>
+                  </p>
+                  <p>
+                    Rs. <%=v.price%> /-
+                  </p>
+
+                  <div class="action-btns">
+                    <a class="delete-btn" href="/book/delete/<%=v.id%>">Delete</a>
+                    <a class="update-btn" href="/book/update/?id=<%=v.id%>">Update</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <% })%>
+
+      </div>
+    </div>
+
+
+  </section>
+
+</body>
+
+</html>
